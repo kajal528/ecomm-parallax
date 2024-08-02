@@ -9,11 +9,7 @@ import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
 
 function App() {
-  useEffect(()=>{
-     document.body.classList.add('dark');
-
-  },[])
-
+ 
   return (
    <>
    <NavBar/>

@@ -45,8 +45,8 @@ const NavBar = () => {
                   className={`  px-4 py-1 rounded-3xl ${
                     men ? "text-white" : "text-black"
                   } ${
-                    men ? "bg-left-bottom" : "bg-left-top"
-                  } transition-all ease-linear duration-[200ms]  bg-[length:100px_200px] bg-gradient-to-t from-black from-50% to-transparent to-50% `}
+                    men ? "bg-left-bottom bg-gradient-to-t from-black from-50% to-transparent to-50% " : "bg-left-top"
+                  } transition-all ease-linear duration-[200ms]  bg-[length:100px_200px] `}
                   onClick={() => {
                     setMen(true);
                     setWomen(false);
@@ -59,8 +59,8 @@ const NavBar = () => {
                   className={`px-4 py-1 rounded-3xl  transition-all ease-linear duration-[200ms] ${
                     women ? "text-white" : "text-black"
                   } ${
-                    women ? "bg-left-bottom" : "bg-left-top"
-                  }  bg-[length:100px_200px] bg-gradient-to-t from-black from-50% to-transparent to-50% `}
+                    women ? "bg-left-bottom bg-gradient-to-t from-black from-50% to-transparent to-50%" : "bg-left-top"
+                  }  bg-[length:100px_200px]  `}
                   onClick={() => {
                     setWomen(true);
                     setMen(false);
@@ -73,8 +73,8 @@ const NavBar = () => {
                   className={` px-4 py-1 rounded-3xl transition-all ease-linear duration-[200ms] ${
                     kids ? "text-white" : "text-black"
                   } ${
-                    kids ? "bg-left-bottom" : "bg-left-top"
-                  }  bg-[length:100px_200px] bg-gradient-to-t from-black from-50% to-transparent to-50% `}
+                    kids ? "bg-left-bottom bg-gradient-to-t from-black from-50% to-transparent to-50%" : "bg-left-top"
+                  }  bg-[length:100px_200px]  `}
                   onClick={() => {
                     setKids(true);
                     setMen(false);
