@@ -9,10 +9,10 @@ import womendress from '../assets/womendress.jpg'
 
 const Sales = () => {
   return (
-    <section className=' max-w-[1280px] mx-auto'>
-    <div className=' my-10 grid grid-cols-2 space-x-5'>
+    <section className=' max-w-[1920px] mx-auto'>
+    <div className=' my-10 grid grid-cols-2 space-x-5 justify-center'>
         <div>
-            <img src={black} alt="" className=' h-[700px] w-[600px] object-cover'/>
+            <img src={black} alt="" height={700} width={700} className=' h-[700px] w-[700px] object-cover m-auto'/>
         </div>
         <div >
         <h1 className=' text-3xl'>Summer Sales</h1>
@@ -23,11 +23,11 @@ const Sales = () => {
         <a href="#" className=' p-2 border-b-[1px] border-black'>Explore Our Collection</a>
         </div>
     </div>
-    <div className=' my-20 grid grid-cols-2'>
+    <div className=' my-20 grid grid-cols-2 justify-center space-x-5 '>
         <div>
-            <img src={womendress} alt="" width={'400px'} height={'500px'} className=' h-[500px] w-[400px] object-cover mx-auto'/>
+            <img src={womendress} alt="" width={'500px'} height={'500px'} className=' h-[500px] w-[500px] object-cover mx-auto'/>
         </div>
-        <div className=' grid grid-cols-2 max-w-[420px] gap-4 mx-auto'>
+        <div className=' grid grid-cols-2 max-w-[420px] gap-4 mr-auto'>
             <div className=' relative group '>
                <div className=' opacity-100 group-hover:-translate-y-[55px] transition-transform'> <img src={offwhitedress} alt="" width={'200px'} height={'250px'} className=' h-[250px] w-[200px] object-cover mx-auto ' /></div>
                 <div className=' absolute bottom-0 opacity-0 group-hover:opacity-100  '>

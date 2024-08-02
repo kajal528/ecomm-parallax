@@ -25,7 +25,7 @@ const NewArrivals = () => {
 
 
   return (
-    <section className=" my-10 relative max-w-[1280px] mx-auto">
+    <section className=" my-10 relative max-w-[1920px] mx-auto ">
       <div className=" flex justify-between m-5">
         <h1 className=" text-2xl font-semibold">New Arrivals</h1>
         <a href="#" className=" hover:underline text-sm">

@@ -1,14 +1,14 @@
 import casual from '../assets/occasions/casual.jpg'
-import formal from '../assets/occasions/formal.jpg'
+import formal from '../assets/occasions/formal-mens.jpg'
 import sportswear from '../assets/occasions/sportswear.jpg'
 import { ArrowRight } from '../Icons/Icons'
 
 const Occasions = () => {
   return (
-    <section className=' mt-10 max-w-[1280px] mx-auto'>
+    <section className=' mt-10 max-w-[1920px] mx-auto'>
      <h1 className=' text-2xl font-semibold m-5'>Occasions</h1>
     <div className=' grid grid-cols-3  h-[500px] overflow-hidden'>
-       <div className=' cursor-pointer relative h-[500px] group/casual'> <img src={casual} alt="" height={500} width={500} className='h-[500px] object-cover group-hover/casual:blur-sm'/> 
+       <div className=' cursor-pointer relative h-[500px] group/casual'> <img src={casual} alt="" height={500} width={500}  className='h-[500px] w-full object-cover group-hover/casual:blur-sm object-top'/> 
        <div className=' absolute bottom-2 left-5 flex gap-2 items-center -translate-x-10 group-hover/casual:translate-x-5 transition-transform duration-200'> 
         <div className='  opacity-0 group-hover/casual:opacity-100 transition-opacity '>
          <ArrowRight
@@ -18,7 +18,7 @@ const Occasions = () => {
           <span className='text-white font-semibold text-lg '>Casual</span>
        </div>
        </div>
-       <div className=' cursor-pointer relative h-[500px] group/formal'> <img src={formal} alt="" height={500} width={500} className='h-[500px] object-cover group-hover/formal:blur-sm'/> 
+       <div className=' cursor-pointer relative h-[500px] group/formal'> <img src={formal} alt="" height={500} width={500} className='h-[500px] w-full object-top object-cover group-hover/formal:blur-sm'/> 
        <div className=' absolute bottom-2 left-5 flex gap-2 items-center -translate-x-10 group-hover/formal:translate-x-5 transition-transform duration-200'> 
         <div className='  opacity-0 group-hover/formal:opacity-100 transition-opacity'>
          <ArrowRight
@@ -28,7 +28,7 @@ const Occasions = () => {
           <span className='text-white font-semibold text-lg '>Formal</span>
        </div>
        </div>
-       <div className=' cursor-pointer relative h-[500px] group/sportswear'> <img src={sportswear} alt="" height={500} width={500} className='h-[500px] object-cover group-hover/sportswear:blur-sm'/> 
+       <div className=' cursor-pointer relative h-[500px] group/sportswear'> <img src={sportswear} alt="" height={500} width={500} className='h-[500px] w-full object-top object-cover group-hover/sportswear:blur-sm'/> 
        <div className=' absolute bottom-2 left-5 flex gap-2 items-center -translate-x-10 group-hover/sportswear:translate-x-5 transition-transform duration-200'> 
         <div className=' opacity-0 group-hover/sportswear:opacity-100 transition-opacity'>
          <ArrowRight

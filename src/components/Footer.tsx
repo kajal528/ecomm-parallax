@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter } from "../Icons/Icons";
 
 const Footer = () => {
   return (
-    <section className=" py-12 px-20 flex justify-between max-w-[1280px] mx-auto">
+    <section className=" py-12 px-20 flex justify-between max-w-[1920px] mx-auto">
       <div>
         <h4>Shop</h4>
         <ul className=" text-[12px] mt-2 cursor-pointer space-y-1">

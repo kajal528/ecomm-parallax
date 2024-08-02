@@ -36,7 +36,7 @@ const NavBar = () => {
   
   return (
     <>
-        <section className={` navbar w-full fixed hover:bg-white  ${(men||women||kids)? 'bg-white':''} z-10 max-w-[1280px] left-1/2 -translate-x-1/2`}>
+        <section className={` navbar w-full fixed hover:bg-white  ${(men||women||kids)? 'bg-white':''} z-10 max-w-[1920px] left-1/2 -translate-x-1/2`}>
           <div className=" flex p-4">
             <div className="  cursor-pointer mr-10 w-28 text-3xl font-bold">EnVogue</div>
             <div className=" ">
@@ -101,7 +101,7 @@ const NavBar = () => {
           </div>
           {men || women || kids ? (
             <div
-              className=" overlay bg-white h-screen w-screen  relative text-sm max-w-[1280px] mx-auto"
+              className=" overlay bg-white h-screen w-screen  relative text-sm max-w-[1920px] mx-auto"
               onClick={() => {
                 setMen(false);
                 setWomen(false);
