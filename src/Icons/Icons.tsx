@@ -1,4 +1,4 @@
-export const ArrowLeft = (props: { size: number; color?: string }) => {
+export const ArrowLeft = (props: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +6,8 @@ export const ArrowLeft = (props: { size: number; color?: string }) => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke={`${props.color ? props.color : "currentColor"}`}
-      className={`size-${props.size}`}
+      height={24}
+      width={24}
     >
       <path
         strokeLinecap="round"
@@ -16,15 +17,16 @@ export const ArrowLeft = (props: { size: number; color?: string }) => {
     </svg>
   );
 };
-export const ArrowRight = (props: { size: number; color?: string }) => {
+export const ArrowRight = (props: { color?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
+      height={24}
+      width={24}
       stroke={`${props.color ? props.color : "currentColor"}`}
-      className={`size-${props.size}`}
     >
       <path
         strokeLinecap="round"

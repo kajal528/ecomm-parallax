@@ -9,17 +9,17 @@ export default {
   theme: {
     extend: {
       animation:{
-        textreveal: ' textreveal 1s ',
-        textreveal2: ' textreveal 2s',
-        textreveal3: ' textreveal 3s'
+        textreveal: ' textreveal 1s ease-out forwards',
       },
       keyframes:{
         textreveal:{
           from: {
-            height:'0px',
+             
+             transform: 'translateY(100%)'
           },
           to:{
-            height:'65px',
+            
+             transform: 'translateY(0)'
           }
       }
     },

@@ -9,10 +9,10 @@ import womendress from '../assets/womendress.jpg'
 
 const Sales = () => {
   return (
-    <section>
-    <div className=' my-10 grid grid-cols-2'>
+    <section className=' max-w-[1280px] mx-auto'>
+    <div className=' my-10 grid grid-cols-2 space-x-5'>
         <div>
-            <img src={black} alt="" className=' h-[700px] w-[600px] object-contain'/>
+            <img src={black} alt="" className=' h-[700px] w-[600px] object-cover'/>
         </div>
         <div >
         <h1 className=' text-3xl'>Summer Sales</h1>

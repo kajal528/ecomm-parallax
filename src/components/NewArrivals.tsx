@@ -3,7 +3,8 @@ import { newarrivals } from "../data/data";
 import { ArrowLeft, ArrowRight } from "../Icons/Icons";
 
 const NewArrivals = () => {
-  const sliderCount = 5;
+  
+  const sliderCount = Math.floor(window.innerWidth/220);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sliderData, setSliderData] = useState(() =>
     newarrivals.slice(currentIndex, sliderCount)
@@ -22,17 +23,18 @@ const NewArrivals = () => {
     });
   };
 
+
   return (
-    <section className=" my-10 relative">
+    <section className=" my-10 relative max-w-[1280px] mx-auto">
       <div className=" flex justify-between m-5">
         <h1 className=" text-2xl font-semibold">New Arrivals</h1>
         <a href="#" className=" hover:underline text-sm">
           view all
         </a>
       </div>
-      <div className=" flex gap-6 overflow-hidden mx-5 relative py-4">
+      <div className=" flex gap-6 overflow-hidden mx-5 relative py-4 justify-center">
         {sliderData.map((val) => (
-          <div className=" h-60 w-52 shrink-0 cursor-pointer">
+          <div className=" h-60 w-52 shrink-0 cursor-pointer ">
             <img
               src={val.image}
               alt=""
@@ -40,7 +42,7 @@ const NewArrivals = () => {
               width={192}
               className=" object-contain h-52 w-48"
             />
-            <h4 className=" text-center text-[12px] mt-1 truncate">
+            <h4 className=" text-center text-[12px] mt-1 truncate max-w-48">
               {val.title}
             </h4>
             <div className=" text-[12px] text-gray-600 text-center mb-1">
@@ -56,18 +58,16 @@ const NewArrivals = () => {
           onClick={() => onPrevClick(currentIndex)}
         >
           <ArrowLeft
-            size={6}
             color={`${currentIndex === 0 ? "gray" : "black"}`}
           />
         </button>
         <button
           className=" absolute right-0 top-1/2 -translate-y-1/2 py-4 px-4 rounded-full shadow-2xl bg-white/50 disabled:cursor-default"
-          disabled={currentIndex === sliderCount}
+          disabled={currentIndex === newarrivals.length-sliderCount}
           onClick={() => onNextClick(currentIndex)}
         >
           <ArrowRight
-            size={6}
-            color={`${currentIndex === sliderCount ? "gray" : "black"}`}
+            color={`${currentIndex === newarrivals.length-sliderCount ? "gray" : "black"}`}
           />
         </button>
       </div>

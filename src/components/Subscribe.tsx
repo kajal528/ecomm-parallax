@@ -1,7 +1,7 @@
 
 const Subscribe = () => {
   return (
-    <div className=" bg-[#E5E4E2] py-10 px-5 grid grid-cols-2">
+    <section className=" bg-[#E5E4E2] py-10 px-5 grid grid-cols-2 max-w-[1280px] mx-auto">
       <div>
         <h1 className=" text-3xl font-semibold my-5">Sign up for our newsletter</h1>
         <p>
@@ -19,7 +19,7 @@ const Subscribe = () => {
         <p className=" max-w-72">By subscribing, you consent to our use of your email address as described above. You can withdraw your consent at any time by unsubscribing.</p>
       </div>
       </div>
-    </div>
+    </section>
   );
 };
 

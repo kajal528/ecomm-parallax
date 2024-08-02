@@ -34,11 +34,9 @@ const NavBar = () => {
      kidsClothing.push(data)
   }
   
-console.log(mensClothing);
-
   return (
     <>
-        <section className={` navbar w-full fixed hover:bg-white  ${(men||women||kids)? 'bg-white':''} z-10`}>
+        <section className={` navbar w-full fixed hover:bg-white  ${(men||women||kids)? 'bg-white':''} z-10 max-w-[1280px] left-1/2 -translate-x-1/2`}>
           <div className=" flex p-4">
             <div className="  cursor-pointer mr-10 w-28 text-3xl font-bold">EnVogue</div>
             <div className=" ">
@@ -103,24 +101,22 @@ console.log(mensClothing);
           </div>
           {men || women || kids ? (
             <div
-              className=" overlay bg-white h-72 w-screen  relative text-sm"
+              className=" overlay bg-white h-screen w-screen  relative text-sm max-w-[1280px] mx-auto"
               onClick={() => {
                 setMen(false);
                 setWomen(false);
                 setKids(false);
               }}
             >
-              <div className="absolute text-black w-full  h-44 flex gap-10 ml-[180px] mt-2">
+              <div className="absolute text-black  gap-x-8  gap-y-8 mr-[100px] flex  ml-[180px] mt-2 flex-wrap">
                 {men && mensClothing.map((value)=>(
-                     <div className=" h-full flex flex-col">
+                     <div className=" h-full flex flex-col "  onClick={(event) => {
+                      event.stopPropagation();
+                    }}>
                       <h4 className=" font-semibold ">{value.category}</h4>
                      <ul className=" cursor-pointer space-y-1 text-[12px] mt-2">
                      {value.subCategory.map((data)=>(
-                       <li
-                       onClick={(event) => {
-                         event.stopPropagation();
-                       }}
-                     >
+                       <li className=" hover:underline">
                        {data}
                      </li>
                      ))}
